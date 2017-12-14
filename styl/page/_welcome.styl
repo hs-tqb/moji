@@ -1,0 +1,60 @@
+#welcome
+  padding 30vw 1em 0
+
+  header
+    padding 6vw 0
+    min-height 2.5rem
+    text-align center
+
+    p
+      background-color rgba(34,34,34,.5)
+      border-radius 1.5em
+      color white
+      font-size 11px
+      display inline-block
+      margin 0
+      padding 0 1em
+      text-align center
+
+  .body
+    background-color white
+    border-radius .5em
+    box-shadow 0 2px 16px 2px rgba(0,0,0,.2)
+    padding .5em
+
+    small
+      display block
+
+    .btn
+      background-color $price-blue
+      color white
+      line-height 2
+
+  ul
+    padding-left 1em
+
+  li
+    background url(../../img/welcome-icon.png) no-repeat left 4px/40px
+    font-size 18px
+    font-weight bold
+    list-style none
+    margin-bottom 2em
+    padding-left 2.7em
+
+    small
+      font-size .666666em
+      font-weight normal
+
+    for n in 2..4
+      &:nth-child({n})
+        background-position-y -45px * (n - 1)
+
+  footer
+    color gray
+    font-size 12px
+    margin-top 2.5em
+    text-align center
+
+  @media (max-width $iphone5)
+    li
+      margin-bottom 1em

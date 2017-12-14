@@ -1,0 +1,9 @@
+{
+  "jquery": "//cdn.staticfile.org/jquery/3.2.1/",
+  "animate.css": "//cdn.staticfile.org/animate.css/3.5.2/",
+  "vue": "//cdn.staticfile.org/vue/2.4.2/",
+  "vue-router": "//cdn.staticfile.org/vue-router/2.7.0/",
+  "vuex": "//cdn.staticfile.org/vuex/2.3.1/",
+  "tqb-component-date-picker": "//static.meathill.com/date-picker/docs/",
+  "tqb-component-city-picker": "//static.meathill.com/city-picker/docs/"
+}

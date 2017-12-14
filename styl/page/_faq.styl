@@ -1,0 +1,55 @@
+#faq
+  header
+    background-color #333
+    color white
+    line-height 3em
+    position relative
+
+    a
+      color white
+      position absolute
+      top 0
+      left 0
+      width 3rem
+      height bottom
+      text-align center
+
+      i::before
+        transform scaleX(-1)
+
+    h3
+      margin 0
+
+  h3
+    text-align center
+
+  dl
+    padding 0 1.5rem
+    border-bottom .75rem solid rgb(242,242,242)
+    margin-bottom 0
+
+  dt,dd
+    margin-left 1.7rem
+    text-indent -1.6rem
+
+    &:before
+      font-family Courier, Consolas
+
+  dt
+    &:before
+      content 'Q：'
+
+  dd
+    color #666
+    margin-bottom 1.5rem
+
+    &:before
+      content 'A：'
+
+  ol
+    margin 0
+    padding 0 1.5rem 0 2.5rem
+    border-bottom .75rem solid rgb(242,242,242)
+
+    li
+      margin-bottom 1rem

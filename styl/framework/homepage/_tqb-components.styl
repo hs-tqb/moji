@@ -1,0 +1,53 @@
+.tqb-city-picker-label
+  font-size 18px
+  line-height 5rem
+  font-weight 500
+  padding-left 1.5rem
+  display block
+
+  &:after
+    font-family 'fontello'
+    content '\e802'
+    color $yellow
+    font-size 80%
+    display inline-block
+    margin-left .8rem
+
+.dates
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+
+  .amount
+    margin 0
+    width 100%
+    text-align right
+    line-height 2
+
+  small
+    font-size .625em
+
+.tqb-date-picker-label
+  border-bottom 1px solid $silver
+  font-size 15px
+  line-height 2.4
+  display block
+  width 37%
+  text-align center
+  margin 0 4%
+
+  &.start:empty::before
+    content '开始日期'
+
+  &.end:empty::before
+    content '结束日期'
+
+  small
+    color gray
+    font-size 11px
+
+.to
+  color gray
+  line-height 36px
+  text-align center
+  width 10%

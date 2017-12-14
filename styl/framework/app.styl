@@ -1,0 +1,41 @@
+#app
+  background url(../../img/header3.jpg) no-repeat center top/contain
+  min-height 100vh
+  position relative
+
+  &.no-bg
+    background none
+
+  > header
+    position absolute
+    top 9.2vw
+    left 0
+    right 0
+
+    > *
+      color white
+      margin 0
+      padding-right 2rem
+      text-align center
+
+    > h1
+      font-size 1.5em
+      font-weight normal
+
+    > p
+      font-size 1.85em
+
+  .version
+    position fixed
+    top 1rem
+    left 1rem
+    border 1px solid red
+    background-color white
+    padding 0 .25rem
+    z-index 65535
+
+  @media (max-width $iphone5)
+    > header
+
+      > p
+        font-size 1.75em

@@ -1,0 +1,157 @@
+.bill
+  dl
+    position relative
+    padding 0 1rem
+    margin 0
+    display flex
+    flex-wrap wrap
+
+  dt
+    width 6em
+    line-height 3rem
+
+  dd
+    flex 1
+    margin 0
+    text-align right
+    min-width 16em
+    line-height 3rem
+
+  p
+    margin 0
+    line-height 2em
+
+    &:first-child
+      margin-top .5em
+
+    &:last-child
+      margin-bottom .5em
+
+  small
+    color $gray
+    font-size 11px
+
+  header
+    padding 0 1rem
+
+  .phone,
+  .discount
+    color red
+    text-decoration none
+
+  .price
+    color $price-blue
+
+  .final
+    font-size 16px
+
+#checkout
+  dl:first-child
+    padding-top 8px
+    border-top .75rem solid $background-silver
+    border-bottom .75rem solid $background-silver
+
+    ::before
+      content ''
+      background url(../img/sprites.png) repeat-x
+      background-position-y -60px
+      background-size 68px
+      height 4px
+      position absolute
+      top 0
+      left .5rem
+      right .5rem
+
+  dt,dd
+    &:nth-child(n+3)
+      border-top 1px solid $border-color
+
+  footer
+    border-bottom .75rem solid $background-silver
+    display flex
+    flex-direction column
+
+    h3
+      background-color $background-silver
+      font-weight normal
+      line-height 2.75
+      padding 0 1rem
+      margin 0
+
+    button
+      background-color white
+      display block
+      margin 0 1rem
+      padding 0 0 0 2.5rem
+      width auto
+      border none
+      text-align left
+      line-height 3.25
+      position relative
+
+      &:acitve
+        background-color lighten($silver, 50%)
+
+      &:disabled
+        opacity .65
+
+      &:before
+        content ''
+        width 2rem
+        height 2rem
+        background url(../img/sprites.png) no-repeat -31px 0px
+        background-size 68px
+        position absolute
+        top .5rem
+        left 0
+
+      &.weixin::before
+        top .75rem
+
+      &.alipay::before
+        background-position-y -25px
+
+      &:after
+        color $price-blue
+        content '\e802'
+        font-family 'fontello'
+        font-weight lighter
+        position absolute
+        right 0
+
+      + button
+        border-top 1px solid $background-silver
+
+#receipt
+  h3
+    font-size 1.28rem
+    text-align center
+
+  p
+    font-size .85rem
+
+  .lead
+    text-align center
+
+  .btn-group
+    display flex
+    padding 0 0 1em
+
+    .btn
+      flex 1
+
+      + .btn
+        margin-left 1em
+
+  .bar
+    height 10px
+    background-color $background-silver
+    border-top 1px dashed silver
+    border-bottom 1px dashed silver
+
+  .icon-ok-circled2
+    color $price-blue
+
+  .icon-cancel-circled-outline,
+  .red
+    color red

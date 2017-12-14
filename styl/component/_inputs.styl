@@ -1,0 +1,44 @@
+.form-group
+  position relative
+
+  + .form-group
+    margin-top .45rem
+
+.form-control
+  display block
+  font-size 12px
+  padding 1em .75rem
+  border 1px solid $silver
+  border-radius .25rem
+  width 100%
+
+  &::placeholder
+    color $gray
+
+  &:disabled
+    background-color lighten($silver, 50%)
+    color lighten($font-color, 30%)
+    cursor not-allowed
+
+  + .message
+    position absolute
+    font-size .75rem
+    top .625rem
+    right .75rem
+
+    &.valid
+      color $price-blue
+
+    &.invalid
+      color red
+
+  &:required + .required
+    position absolute
+    background-color $red
+    border-radius 50%
+    width 5px
+    height 5px
+    font-size 5px
+    line-height 5px
+    top 1.2rem
+    right .75rem

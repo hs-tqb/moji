@@ -1,0 +1,97 @@
+.hongbao-list
+  input
+    display none
+
+    &:checked + label
+      border-color transparent
+      background-image linear-gradient(to left top, #709CF7, rgba(162,174,170,80))
+      color white
+
+      &::before
+        background-position-y -135px
+
+      &::after
+        content ''
+        background-color #5A70EE
+        width 3rem
+        height 3rem
+        transform rotate(45deg)
+        position absolute
+        right -1.7rem
+        bottom -1.7rem
+        z-index 550
+
+      &.hot::before
+        background-position-y -225px
+
+      .price
+        color white
+
+      strong
+        color #F8E81C
+
+      .icon-ok
+        display block
+        color white
+        position absolute
+        right 0
+        bottom 0
+        z-index 551
+        font-size .6rem
+
+  label
+    border 1px solid #8091ED
+    border-radius .5rem
+    display block
+    padding .5rem .75rem
+    position relative
+    overflow hidden
+
+    &::before
+      content ''
+      position absolute
+      right 0
+      bottom 0
+      width 55px
+      height 45px
+      z-index 600
+      background url(../img/sprites.png) no-repeat 0 -90px
+      background-size 51px
+
+    &.hot::before
+      background-position-y -180px
+
+    h3
+      font-size 20px
+      margin 0 0 .75rem
+
+    .price
+      position absolute
+      top .25rem
+      right .75rem
+      font-size 1.85rem
+      color $price-blue
+      font-weight bold
+
+      &:before
+        content '￥'
+        font-size .6em
+
+    p
+      font-size .785rem
+      margin 0
+
+    .lead
+      font-size 1rem
+      margin 0 0 .25rem
+
+    strong
+      color red
+      font-weight normal
+
+    .icon-ok
+      display none
+
+  .help-block
+    font-size .75rem
+    margin .25rem 0 1rem
